@@ -44,5 +44,10 @@ def no_intent():
     bye_text = 'I am not sure why you asked me to run then, but okay... bye'
     return statement(bye_text)
 
+@ask.intent("Dont")
+def confused():
+    confused_test="Dont be confused, you are with me"
+    return statement(confused_test)
+
 if __name__ == '__main__':
     app.run(debug=True)
