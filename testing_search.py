@@ -3,7 +3,7 @@ import ddg3
 
 
 def search_wik(query):
-    summary_test=wikipedia.summary(query,sentences=1)
+    summary_test=wikipedia.summary(query,sentences=2)
     print ("\n"+"Wikiepdia"+"\n"+summary_test)
 
 
@@ -12,6 +12,6 @@ def search_duck(query):
     print("\n"+"Duck and Duck"+"\n"+r.related[1].text)
 
 
-search_wik('Abhishek')
-search_duck("Abhishek")
+search_wik('search about India')
+#search_duck("India")
 
